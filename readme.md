@@ -32,7 +32,7 @@ Aşağıda istenilen sonuçlara ulaşabilmek için gerekli SQL sorgularını alt
 
     2) Öğrenci tablosundaki öğrencinin adını ve soyadını ve sınıfını listeleyin.
 
-
+    SELECT ograd, ogrsoyad, sinif FROM ogrenci;
 
     3) Öğrenci tablosundaki kız öğrencileri listeleyin.
 
@@ -52,10 +52,11 @@ Aşağıda istenilen sonuçlara ulaşabilmek için gerekli SQL sorgularını alt
 
     7) Öğrenci tablosundaki öğrencinin adını, soyadını ve numarasını okul numarası olarak listeleyiniz. (as kullanım örneği)
 
-
+    SELECT ograd, ogrsoyad, ogrno AS 'Okul Numarası' FROM ogrenci;
 
     8) Öğrenci tablosundaki öğrencinin adını ve soyadını birleştirip, adsoyad olarak listeleyiniz. (concat, as kullanım örneği)
 
+    SELECT CONCAT(ograd, ' ', ogrsoyad) AS adsoyad FROM ogrenci;
 
     9) Öğrenci tablosundaki Adı ‘A’ harfi ile başlayan öğrencileri listeleyiniz.
 
